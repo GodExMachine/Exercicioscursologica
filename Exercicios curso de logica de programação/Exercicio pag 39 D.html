@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link type="text/css" rel="stylesheet" href="estilo.css">   
+</head>
+<body class="center" >
+    <script>
+
+//Varial que recebe o a ser decrementado em escada
+var numeroinicial = prompt("escolha um numero!")
+
+
+// indentifica se o numero inicial é muito grande e pode travar a maquina
+if(numeroinicial > 50){
+    alert("Escolha um numero menor que 50 ou seu computador ira travar")
+    //recarega a pagina
+    location.reload()  
+}else{
+
+
+while(numeroinicial != 0){                       //Este laço serve para repetir oque esta dentro dele até o numero inical chegar a 0
+
+    //este laço é repetido enquando o primeiro laço for diferente de 0
+for(var quantidade = numeroinicial; quantidade >= 1;quantidade -= 1){ //Cria uma variavel e atribui um valor á ela; e repete o comando...
+document.write(quantidade+" ")            //.. que fica entre {} enquanto ela for maior que 1; e depois diminui em 1 o valor dela                 
+}
+
+document.write("<br>")              //este comando quebra a linha para criar um efeito e escada
+
+numeroinicial -= 1                 //este comando diminui o numero inicial em 1 para que ele se repita ate chegar em 0
+}
+}
+
+    </script>
+</body>
+</html>

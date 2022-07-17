@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link type="text/css" rel="stylesheet" href="estilo.css">
+    
+<script>
+
+
+
+
+
+
+
+//candidatos
+var candidatojoao = 0;
+var candidatopedro = 0;
+var candidatomaria = 0;
+var nulos = 0;
+//Variavel que armaneza o numero de vezes que será posivel votar ante de exibir o resultado]
+var maximodevotos =0;
+
+
+//variavel que armazena o voto do usuario
+
+
+
+//Função
+do{
+
+    //variavel que armazena o voto do usuario
+var votousuario = prompt("Em quem você deseja votar Pedro, Maria ou Joao? este é voto "+maximodevotos+" de 3")
+
+if(votousuario == "Joao"){
+    candidatojoao += 1                                   // Adiciona o valor do voto ao montante de votos ja existentes na variavel
+    maximodevotos += 1                                   //Adicionar + 1 ao numero de vezes que foi votado
+
+}else if(votousuario == "Pedro"){
+    candidatopedro += 1
+    maximodevotos += 1
+
+}else if(votousuario == "Maria"){
+    candidatomaria += 1
+    maximodevotos += 1
+}else{
+    nulos += 1
+    maximodevotos += 1
+}
+}while(maximodevotos <= 2)
+
+//mostra na tela o resultado
+document.write("Candidato João teve "+candidatojoao+" Votos"+"<br>")
+document.write("Candidato Pedro teve "+candidatopedro+" Votos"+"<br>")
+document.write("Candidata Maria teve "+candidatomaria+" Votos"+"<br>")
+document.write("Votos nulos "+nulos+"<br>")
+
+//Informa o vencedor
+if(candidatojoao > candidatopedro && candidatojoao > candidatomaria) {          //testa se joão foi mais votado que pedro e que maria
+    document.write("João esta eleito!")
+}else if(candidatopedro > candidatojoao && candidatopedro > candidatomaria){
+    document.write("Pedro esta eleito!")
+}else if(candidatomaria > candidatojoao && candidatomaria > candidatojoao){
+    document.write("Maria está eleita!")
+}else if(nulos > 2
+){
+    document.write("ANARQUIA!")
+}
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+   
+<body>
+    
+</body>
+</html>

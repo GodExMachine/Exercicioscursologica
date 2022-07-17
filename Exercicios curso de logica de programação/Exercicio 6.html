@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votaçao</title>
+    <link type="text/css" rel="stylesheet" href="estilo.css"> 
+</head>
+<body>
+    <script>
+
+
+//Armazena os votos dos usuarios 
+var alessandra = 0;
+var caio = 0;
+var geraldo = 0;
+var talita = 0;
+var nulos = 0;
+
+//Iforma ao usuario sobre a votação
+alert("DIGITE O NUMERO DO CANDIDATO PARA VOTAR ")
+
+//Pergunta ao usuario em quem ele deseja votar
+while(votosusuario != 5){
+ var votosusuario = prompt("1 Alessandra / 2 caio / 3 geraldo / 4 talita / 5 Encerrar eleição")
+
+//Soma um voto á variavel corespondente ao candidato do usuario
+if(votosusuario == 1){
+alessandra += 1
+}else if(votosusuario == 2 ){
+caio +=  1
+}else if(votosusuario == 3){
+    geraldo +=  1
+}else if(votosusuario == 4){
+    talita +=  1
+}else{
+    nulos += 1
+}
+}
+
+//Exibe os votos 
+document.write("Candidata Alessandra recebeu "+alessandra+" voto(s)"+"<br>")
+document.write("Candidato Caio recebeu "+caio+" voto(s)"+"<br>")
+document.write("Candidato Geraldo recebeu "+geraldo+" voto(s)"+"<br>")
+document.write("Candidata Talita recebeu "+talita+" voto(s)"+"<br>")
+document.write("Ouverão "+(nulos-1)+" voto(s) nulos"+"<br>")
+
+// exibe o vencedor
+if(alessandra > caio && alessandra > geraldo && alessandra > talita){                       //testa se alesandra foi a mais votada.
+    document.write("Alesandra está eleita!")
+}else if(caio > alessandra && caio > geralda && caio > talita){
+    document.write("Caio está eleito!")
+}else if(geraldo > alessandra && geraldo > caio && geraldo > talita){
+    document.write("Geraldo está eleito!")
+}else if(talita > alessandra && talita > caio && talita > geraldo){
+    document.write("Talita está eleita!")
+}else if(nulos > alessandra && nulos > caio && nulos > geraldo && nulos > talita){
+    alert("ANARQUIA!")
+}else{
+    document.write("Refaça a votação ouve empate")
+    alert("Refaça a votação ouve empate")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>  
+</body>
+</html>

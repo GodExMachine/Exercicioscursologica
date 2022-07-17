@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link type="text/css" rel="stylesheet" href="estilo.css"> 
+</head>
+<body class = "center">
+    <script>
+
+    
+
+
+ var numerousuario = prompt("qual numero voce deseja saber a tabuada?");    //Pergunta ao usuario qual tabua ele quer
+
+ var maximotabuada = 0;
+
+ var respostatabuada =0;
+ 
+
+ //laço de reptição
+ while(maximotabuada < 10){                                 //Repete as instruçoes abaixo ate o valor de maximo tabuada ser menor que 10
+    
+    maximotabuada += 1                                      //Adiciona +1 ao valor contido na variavel
+
+    respostatabuada = numerousuario * maximotabuada         //Reliza a multiplicaçao do numero do usuario Vezes o numero atual da tabuada
+
+    document.write(numerousuario+" X "+ maximotabuada+" = "+respostatabuada+"<br>")  //Exibe na tela o resultado
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

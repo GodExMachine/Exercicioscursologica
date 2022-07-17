@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par ou impar</title>
+    <link type="text/css" rel="stylesheet" href="estilo.css">  
+</head>
+<body class="center">
+<script>
+
+//Usuario Informa o numero inicial e final 
+var nuinicial = prompt("numero inicial")
+var nufinal = prompt("numero final")
+
+//converte para decimal
+var numeroinicial = parseInt(nuinicial)
+var numerofinal = parseInt(nufinal)
+
+var numerosimpares = 0;
+var numerospares = 0;
+
+
+while( numeroinicial <= numerofinal){
+    
+ 
+if(numeroinicial % 2 == 0){
+    numerospares += 1
+    numeroinicial += 1
+}else{
+    numerosimpares += 1
+    numeroinicial += 1
+}
+}
+document.write("Neste Intervalo existem "+numerospares+" numeros pares"+"<br>")
+document.write("Neste Intervalo existem "+numerosimpares+" numeros impares"+"<br>")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

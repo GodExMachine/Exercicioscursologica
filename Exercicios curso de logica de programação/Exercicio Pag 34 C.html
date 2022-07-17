@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<script>
+
+//variaveis informadas pelo usuario
+var nomeproduto = "Celular"
+var segmentodoproduto = "Eletronico"
+
+var chapeu = 15;
+var blusa = 12;
+var cafe = 8;
+var bolo = 23;
+var cabousb = 15;
+var celular = 780;
+
+    //Vestuario
+if(segmentodoproduto == "Vestuario" && nomeproduto == "Chapeu"){              //Verifica as informaçoes do usuario
+    let valorapagar = chapeu - (chapeu * 0.05)                                          //Armazena o valor com desconto
+    document.write("O valor a ser pago é R$ "+valorapagar)                    //Informa na tela o valor retornado 
+}else if(segmentodoproduto == "Vestuario" && nomeproduto == "Blusa"){
+    let valorapagar = blusa - (blusa -0.05)
+    document.write("O valor a ser pago é R$ "+valorapagar)
+
+    //Alimenticio
+}else if(segmentodoproduto == "Alimenticío" && nomeproduto =="Cafe"){
+    let valorapagar = cafe -  (cafe * 0.1)
+    document.write("O valor a ser pago é R$ "+valorapagar)
+}else if(segmentodoproduto == "Alimenticío" && nomeproduto =="Bolo"){
+    let valorapagar = bolo - (bolo * 0.1)
+    document.write("O valor a ser pago é R$ "+valorapagar)
+
+    //Eletronico
+}else if(segmentodoproduto == "Eletronico" && nomeproduto =="Cabo USB"){
+    let valorapagar = cabousb - (cabousb * 0.08)
+    document.write("O valor a ser pago é R$ "+valorapagar)
+}else if(segmentodoproduto == "Eletronico" && nomeproduto =="Celular"){
+    let valorapagar = celular - (celular * 0.08)
+    document.write("O valor a ser pago é R$ "+valorapagar)
+
+    //Caso o usuario informe um segmento invalido
+}else{
+    document.write("O segmento informado não corresponde á este produto")
+} 
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="text/css" rel="stylesheet" href="estilo.css"> 
+    <title>Document</title>
+    
+</head>
+<body>
+    <script>
+
+        //Variaveis informadas pelo usuario
+        var horariobrasil = 0;
+        var paisescolhido = prompt("informe qual pais deseja consultar o horario")
+
+
+        if(paisescolhido == "Alemanha"){                                                     //verifica qual pais o usuario escolheu
+            document.write(horariobrasil+5)                                                  //soma as horas a mais do fuso horario                          
+            
+        }else if(paisescolhido == "Coreia do sul"){
+            document.write(horariobrasil+12)
+            
+        }else if(paisescolhido == "Indonesia"){
+            document.write(horariobrasil+10)
+        }
+
+
+
+
+
+
+
+        //function formatar_segundos(h,min,s) {                    /// essa funçao transforma horas e minutos em segundos
+       // return (h*3600)+(min*60)+(s);
+       // }
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

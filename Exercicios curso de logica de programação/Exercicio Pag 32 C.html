@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>c pag 32</title>
+
+
+<script>
+
+
+///////////////////////
+//codigo dos produtos//
+// pizza 1           //
+// paodequeijo  2    //
+// macarao  3        //
+///////////////////////
+
+// valor digitado pelo usuario
+var escolhadousuario = 3;  // digite aqui o produto desejado
+var pagamentodousuario = 13; //digite aqui o valor pago
+
+
+//Preço dos produtos
+var preçopizza = 12;
+var preçopaodequeijo = 4;
+var preçomaracao = 16;
+// variavel para o troco
+var trocousuario = 0;
+
+//Função
+
+// Caso o Cliente escolha pizza
+if(pagamentodousuario < preçopizza){                              //Caso o valor for inferior essa linha executara antes
+    document.write("Pagamento Inferior ao preço do produto deposite mais R$ "(preçopizza-pagamentodousuario)) //informa o valor faltante 
+}else if(escolhadousuario == 1 && pagamentodousuario >= preçopizza){     //verifica os valor contidos nas variaves
+    trocousuario = (pagamentodousuario - preçopizza)                        //calcula o valor do troco
+    document.write("Seu troco é R$ "+trocousuario)                          //informa o troco ao usuario
+
+// Caso o cliente escolha pao de queijo
+}else if(pagamentodousuario < preçopaodequeijo){                   
+    document.write("Pagamento Inferior ao preço do produto deposite mais R$ "(preçopaodequeijo-pagamentodousuario))
+}else if(escolhadousuario == 2 && pagamentodousuario >= preçopaodequeijo){  
+    trocousuario = (pagamentodousuario - preçopaodequeijo)
+    document.write("Seu troco é R$ "+trocousuario)
+    
+// Caso o cliente escolha macarrão
+}else if(pagamentodousuario < preçomaracao){                        
+    document.write("Pagamento Inferior ao preço do produto deposite mais R$ "+(preçomaracao-pagamentodousuario))
+}else if(escolhadousuario == 3 && pagamentodousuario >= preçomaracao){
+    trocousuario = (pagamentodousuario - preçomaracao)
+    document.write( "Seu troco é R$ "+trocousuario)
+}
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>

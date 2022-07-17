@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+
+
+
+//variavel que armazena o valor 
+var valorinformado = 1
+//variavel que Informa a moeda inserida pelo usuario
+var moedaentradausuario = "Dolar";
+//variavel informa qual a moeda o usario deseja saber o valor
+var moedesaidausurario = "Euro";
+
+//função
+    // real para dolar
+if(moedaentradausuario == "Real" && moedesaidausurario == "Dolar"){                       //verifica qual o tipo de conversao 
+    let resultadoconversao = (valorinformado / 5.25)                                      //transforma em dolar 
+    document.write("R$ "+valorinformado+" é equivalente á $ "+resultadoconversao)         //informa na tela o valor convertido
+
+    //dolar para real
+}else if( moedaentradausuario == "Dolar" && moedesaidausurario == "Real"){
+    let resultadoconversao = (valorinformado * 5.25)
+    document.write("$ "+valorinformado+" é equivalente á R$ "+resultadoconversao)
+
+    //real para euro
+}else if(moedaentradausuario == "Real" && moedesaidausurario == "Euro"){
+    let resultadoconversao = (valorinformado * 6.21)
+    document.write("R$ "+valorinformado+" é equivalente á £ "+resultadoconversao)
+
+    //euro para real
+}else  if(moedaentradausuario == "Euro" && moedesaidausurario == "Real"){
+    let resultadoconversao = (valorinformado / 6.21)
+    document.write("£ "+valorinformado+" é equivalente á R$ "+resultadoconversao)
+
+    //dolar para euro   
+}else if(moedaentradausuario == "Dolar" && moedesaidausurario == "Euro"){
+    let resultadoconversao = (valorinformado * 1.18)
+    document.write("$ "+valorinformado+" é equivalente á ¢ "+resultadoconversao)
+
+    //euro para dolar
+}else if(moedaentradausuario == "Euro" && moedesaidausurario == "Dolar"){
+    let resultadoconversao =(valorinformado / 1.18)
+    document.write("¢ "+valorinformado+" é equivalente á $ "+resultadoconversao)
+
+    //caso o usuario nao infome ou repita os valores
+    }else{
+        document.write("Os valores Informados não sao validos para a cnversão")
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

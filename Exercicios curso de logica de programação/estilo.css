@@ -1,0 +1,13 @@
+
+body{
+    background-color: black;
+    color:white
+   
+    } 
+
+    .center{ 
+        display: flex;
+        justify-content: center;
+    }
+
+    /*               <link type="text/css" rel="stylesheet" href="estilo.css">             class="center"             */ 
